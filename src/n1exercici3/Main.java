@@ -16,10 +16,10 @@ public class Main {
         System.out.println("Introduzca la ruta del directorio a leer:");
         Scanner scanner = new Scanner(System.in);
         directori = scanner.nextLine();
-        boolean result = insideFolder.createFile(directori + "\\Java_utils\\src\\n1exercici3", "outPut.txt");
+        boolean result = insideFolder.createFile("src/n1exercici3/", "outPut.txt");
         if (result) {
             try {
-                printStream = new PrintStream(new File(directori + "\\Java_utils\\src\\n1exercici3\\outPut.txt"));
+                printStream = new PrintStream(new File("src/n1exercici3/outPut.txt"));
             } catch (FileNotFoundException ex) {
                 System.out.println(ex);
             }
