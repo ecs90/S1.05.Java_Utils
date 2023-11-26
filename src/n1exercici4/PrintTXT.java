@@ -3,7 +3,7 @@ package n1exercici4;
 import java.io.*;
 
 public class PrintTXT {
-    File file;
+    private File file;
 
     public PrintTXT(String file) {
         this.file = new File(file);
